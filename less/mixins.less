@@ -605,6 +605,44 @@
 
   }
 
+  // fluidnogutter - added by WigWag
+
+  .fluidnogutter (@fluidGridColumnWidth, @fluidGridGutterWidth) {
+
+    .spanX (@index) when (@index > 0) {
+      (~".span@{index}") { .span(@index); }
+      .spanX(@index - 1);
+    }
+    .spanX (0) {}
+
+    .span (@columns) {
+      width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
+      //width: (@fluidGridColumnWidth * @columns);
+      *width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%);
+      //*width: (@fluidGridColumnWidth * @columns) - (.5 / @gridRowWidth * 100 * 1%);
+    }
+
+    .row-fluid-nogutter {
+      width: 100%;
+      .clearfix();
+      [class*="span"] {
+        .input-block-level();
+        float: left;
+        margin-left: @fluidGridGutterWidth;
+        *margin-left: @fluidGridGutterWidth - (.5 / @gridRowWidth * 100 * 1%);
+      }
+      [class*="span"]:first-child {
+        margin-left: 0;
+      }
+
+      // generate .spanX
+      .spanX (@gridColumns);
+    }
+
+  }
+  
+  // end fluidnogutter
+
   .input(@gridColumnWidth, @gridGutterWidth) {
 
     .spanX (@index) when (@index > 0) {
