@@ -104,6 +104,8 @@
 
 // Set text color
 // -------------------------
+.btn-wigwag,         // WigWag
+.btn-wigwag:hover,   // WigWag
 .btn-primary,
 .btn-primary:hover,
 .btn-warning,
@@ -120,6 +122,7 @@
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 }
 // Provide *some* extra contrast for those who can get it
+.btn-wigwag.active,  // WigWag
 .btn-primary.active,
 .btn-warning.active,
 .btn-danger.active,
@@ -158,6 +161,10 @@
 // Inverse appears as dark gray
 .btn-inverse {
   .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
+}
+// WigWag add
+.btn-wigwag {
+  .buttonBackground(@btnWigWagBackground, @btnWigWagBackgroundHighlight);
 }
 
 
