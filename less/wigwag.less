@@ -1,9 +1,35 @@
 // WigWag specific stuff
 
-@WigWagBlue:    #0083c9;
-@WigWagDarkerBlue: #0179ba;
-@WigWagLighterBlue: #44b0ea;
-
+@WigWagBlue:    #0083c9;       // official WigWag blue color
+@WigWagDarkerBlue: #0179ba;    // for gradient darkening 
+@WigWagLighterBlue: #44b0ea;   // for gradient highlight
+@WigWagWhiteBlue: #d1ecfa;     // used for backgrounds to menus, nav areas, etc.
 
 @btnWigWagBackground: @WigWagBlue;
 @btnWigWagBackgroundHighlight: @WigWagDarkerBlue;
+
+.ww_blue_override {
+    color: @WigWagBlue !important;
+}
+
+.ww_darkblue_override {
+    color: @WigWagDarkerBlue !important;
+}
+
+.ww_lightblue_override {
+    color: @WigWagLighterBlue !important;
+}
+
+.ww_whiteblue_override {
+    color: @WigWagWhiteBlue !important;
+}
+
+// Workarounds specific to our pages...
+
+
+.nav.ww-tight-pills {
+    margin-bottom: 2px;
+}
+
+
+
