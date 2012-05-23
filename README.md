@@ -1,3 +1,14 @@
+WigWag modified Bootstrap
+-----------
+
+Adds the following:
+
+* special icons we need
+* icon buttons ported from [Twitter Bootstrap Xtra](http://lightglitch.github.com/bootstrap-xtra/)
+* new UI elements, such as 'Tree'  (a modified nav list)
+* a zero gutter style grid 
+
+
 [Twitter Bootstrap](http://twitter.github.com/bootstrap) [![Build Status](https://secure.travis-ci.org/twitter/bootstrap.png)](http://travis-ci.org/twitter/bootstrap)
 =================
 

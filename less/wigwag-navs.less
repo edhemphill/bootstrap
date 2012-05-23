@@ -55,7 +55,7 @@
 }
 
 
-.ww-expander {
+.ww-expander-active {
     margin: 0px 5px 0px 0px; 
 //    margin: 0;
     display: inline-block;
@@ -64,11 +64,35 @@
     padding-left: 1px;
     overflow: hidden;
     .border-radius(2px);
+    background-color: #fff;
 //    font-size: 5px;
 //    font-weight: normal;
 //    width: 10px;
 }
 
+.ww-expander-off {
+    margin: 0px 5px 0px 0px; 
+//    margin: 0;
+    display: inline-block;
+    max-width: 14px;
+    max-height: 17px;
+    padding-left: 1px;
+    overflow: hidden;
+    .border-radius(2px);
+    background-color: @WigWagBlue;
+//    font-size: 5px;
+//    font-weight: normal;
+//    width: 10px;
+}
+
+// hide entries in the nav tree...
+.nav-tree-list > .branch-hide > a {
+//  li > a {
+//    a {
+        display: none;
+//    }
+//  }
+}
 
 
 // NAVIGATIONS
