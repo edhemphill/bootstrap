@@ -38,3 +38,4 @@ node_modules
 build/responsive.css
 
 build/bootstrap.css
+dist
